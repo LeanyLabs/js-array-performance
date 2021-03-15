@@ -1,0 +1,27 @@
+{
+  "name": "js-array-performance",
+  "version": "1.0.0",
+  "description": "Performance benchmarks of different array iteration methods",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeanyLabs/js-array-performance.git"
+  },
+  "keywords": [
+    "array",
+    "performance",
+    "javascript"
+  ],
+  "author": "LeanyLabs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeanyLabs/js-array-performance/issues"
+  },
+  "homepage": "https://github.com/LeanyLabs/js-array-performance#readme",
+  "dependencies": {
+    "benchmark": "^2.1.4"
+  }
+}
