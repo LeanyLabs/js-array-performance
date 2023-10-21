@@ -31,6 +31,6 @@ function generateTestArray() {
 
 const testArray = generateTestArray();
 
-runSuite(buildForEachSuite(testArray));
+//runSuite(buildForEachSuite(testArray));
 runSuite(buildMapSuite(testArray));
-runSuite(buildReduceSuite(testArray));
+//runSuite(buildReduceSuite(testArray));
