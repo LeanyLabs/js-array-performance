@@ -47,18 +47,30 @@ function buildMapSuite(array) {
       return array.map(({ a, b }) => a + b);
     })
     .add("for of", function () {
-      const result = [];
-      for (const obj of array) {
-        result.push(obj.a + obj.b);
+      try {
+        const result = new Array(array.length)
+        let i = 0
+        for (const obj of array) {
+          result[i] = obj.a + obj.b;
+          i++
+        }
+        return result;
+      } catch (err) {
+        console.error(err)
       }
-      return result;
     })
     .add("for of, destructuring", function () {
-      const result = [];
-      for (const { a, b } of array) {
-        result.push(a + b);
+      try {
+        const result = new Array(array.length)
+        let i = 0
+        for (const { a, b } of array) {
+          result[i] = a + b
+          i++
+        }
+        return result;
+      } catch (err) {
+        console.error(err)
       }
-      return result;
     })
     .add("for, init array", function () {
       const result = new Array(array.length);
